@@ -16,6 +16,7 @@ y_clf = (y_reg > y_reg.median()).astype(int)
 X = df.drop(columns=['MedHouseValue'])
 
 
+
 X = pd.get_dummies(X, columns=['Region'], drop_first=True, dtype=int)
 print(f"Matrix features shape post-encoding: {X.shape}")
 
